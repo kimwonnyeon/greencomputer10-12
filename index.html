@@ -1,12 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>javascript</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 자바스크립트 첫 수업 -->
+    <script>
+      // 자바스크립트는 식과 문으로 구성
+      // 식:표현식(연산식,실제값,함수를 실행하는것도 식이다.)
+      const inch = 2;
+      console.log(inch);
+      ("안녕하세요."); //문자열 => 표현식
+      1 + 2; //숫자=>연산식(표현식)
+      // 문:넓은 의미로 값이나 식까지 포함한다.
+      // ex:조건문,제어문등
+    //알림창 출력
+    // alert("안녕하세요.");
+    // 확인창 출력
+    // confirm("여러분 지금 자바스크립트 수업중입니다.");
+    // 입력창
+    // prompt("생년월일","yyyy-mm-dd");
+    // 화면 출력
+    document.write("김원년");
+    document.write(`<h1>김원년</h1>`);
+    //변수:항상 제일 먼저 선언,먼저 선언하지 않을시 선언 위에있는 변수사용에 적용안됨
+    const name="김원년";
+    document.write(`<h1>${name}</h1>`);
+    const age=20;
+    document.write(`<h1>${name}</h1> <p>나이는${age}</p>`);
     
-</body>
+    </script>
+  </body>
 </html>
