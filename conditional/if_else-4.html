@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문</title>
+  </head>
+  <body>
+    <!-- 로그인 상태 변경 -->
+    <button id="loginBtn">로그인</button>
+    <p id="text">로그아웃</p>
+    <script>
+      // 로그인 상태 변경
+      const btn = document.querySelector("#loginBtn");
+      //   console.log(btn);
+      const text = document.querySelector("#text");
+      //   console.log(text);
+      //로그인 상태
+      let isLogin = false;
+      btn.addEventListener("click", function () {
+        if (isLogin) {
+          isLogin = false;
+          text.textContent = `로그아웃 상태`;
+          btn.textContent=`로그인`
+        } else {
+          isLogin = true;
+          text.textContent = `로그인 상태`;
+          btn.textContent = `로그아웃`;
+        }
+      });
+    </script>
+  </body>
+</html>
