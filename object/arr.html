@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array 객체</title>
+  </head>
+  <body>
+    <script>
+      // Array : 여러 데이터를 순서대로 관리
+      const arr = [1, 2, 3, 4];
+      console.log(arr);
+      // length 속성
+      console.log(arr.length);
+      //push() : 배열 끝 요소를 추가하는 메서드
+      arr.push(8);
+      console.log(arr);
+      //pop() : 배열 끝 요소를 제거하는 메서드
+      arr.pop();
+      //console.log(arr);
+      //shift() : 배열 첫 요소 제거
+      arr.shift();
+      console.log(arr);
+      //unshift() : 배열 앞에 요소 추가하는 메서드
+      arr.unshift(7);
+      console.log(arr);
+      //indexOf() : 요소 위치 반환 (index 번호)
+      console.log(arr.indexOf(3));
+      //slice(시작인덱스(포함),끝인덱스(미포함)) : 배열 일부 반환
+      console.log(arr.slice(1,3));//[7,2,3,4]=>[2,3]
+      //splice() : 배열 요소 추가 / 삭제
+      //splice(시작인덱스,삭제개수,추가값1,추가값2,...)
+      console.log(arr);//[7,2,3,4]
+      arr.splice(1,2,44,50,100);
+      console.log(arr);//[7,44,50,100,4]
+      //join() : 배열을 문자열로 변환
+      console.log(arr.join("******"));
+      //forEach() : 각 요소에 대해 함수 실행
+      arr.forEach((a)=>{
+        console.log(a);
+        document.write(`<p>${a}</p>`);
+      });
+    </script>
+  </body>
+</html>
