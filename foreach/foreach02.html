@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forEach 예제</title>
+  </head>
+  <body>
+    <ul id="fruitList">
+      <!-- js 출력 -->
+    </ul>
+    <script>
+      //더미 데이터
+      const list = document.querySelector("#fruitList");
+      const fruits = [
+        "사과",
+        "바나나",
+        "포도",
+        "망고",
+        "수박",
+        "오렌지",
+        "레몬",
+        "딸기",
+        "키위",
+        "자두",
+      ];
+      console.log(fruits);
+      fruits.forEach((item,index)=>{
+        console.log(item,index);
+        list.innerHTML += `<li>${index+1}.${item}</li>` //+=:개수만큼 반복     
+      })
+
+    </script>
+  </body>
+</html>
