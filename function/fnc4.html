@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 사용예제 3</title>
+</head>
+<body>
+    <button id="skyBtn" onclick="changeColor('skyblue')">하늘색</button>
+    <button id="pinkBtn" onclick="changeColor('pink')">분홍색</button>
+    <button id="yellowBtn" onclick="changeColor('yellow')">노란색</button>
+    <button id="blueBtn" onclick="changeColor('blue')">파란색</button>
+    <script>
+        //색 변경 함수
+        function changeColor(color){
+            console.log(color);
+            
+            document.body.style.backgroundColor = color;
+        }
+    </script>  
+</body>
+</html>

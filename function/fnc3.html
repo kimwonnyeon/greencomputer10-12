@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 사용예제 3</title>
+</head>
+<body>
+    <button id="skyBtn">하늘색</button>
+    <button id="pinkBtn">분홍색</button>
+    <button id="yellowBtn">노란색</button>
+    <button id="blueBtn">파란색</button>
+    <script>
+        const skyBtn = document.querySelector("#skyBtn");
+        const pinkBtn = document.querySelector("#pinkBtn");
+        const yellowBtn = document.querySelector("#yellowBtn");
+        const blueBtn = document.querySelector("#blueBtn");
+        //색 변경 함수
+        function changeColor(color){
+            document.body.style.backgroundColor = color;
+        }
+        skyBtn.addEventListener("click",function(){
+            changeColor("skyblue");
+        });
+        pinkBtn.addEventListener("click",function(){
+            changeColor("pink");
+        });
+        yellowBtn.addEventListener("click",function(){
+            changeColor("yellow");
+        });
+        blueBtn.addEventListener("click",function(){
+            changeColor("blue");
+        });
+    </script>  
+</body>
+</html>
