@@ -17,3 +17,4 @@ closeBtn.addEventListener("click", () => {
   detail.style.display = "none";
   openBtn.style.display = "block";
 });
+const time = document.querySelector("#open");
