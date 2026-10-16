@@ -26,11 +26,11 @@
 }
 .contain > .over {
     position: absolute;
-    top: 50%;
-    transform: translateY(11px);
-    right: 20px;
+    bottom:30px;
+    right: 30px;
 }
 .detail{
+    display: none;
     padding: 20px;
     background-color: aliceblue;
 }
