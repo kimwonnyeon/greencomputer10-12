@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>classList 속성</title>
+    <style>
+      .box {
+        width: 300px;
+        padding: 30px;
+        margin-bottom: 20px;
+        background-color: lightgray;
+      }
+      /* 빨간색 클래스 */
+      .box.red {
+        background-color: red;
+        color: #fff;
+      }
+      .box.blue {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        color: #fff;
+        border-radius: 50%;
+        border: 5px double yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box" id="myBox">안녕하세요!</div>
+    <button id="addBtn">빨간색 추가</button>
+    <button id="removeBtn">빨간색 삭제</button>
+    <button id="toggleBtn">파란색 더하고/삭제</button>
+    <button id="checkBtn">빨간색 확인</button>
+    <script>
+      // html에서 요소 가져오기
+      const box = document.querySelector("#myBox");
+      //   console.log(box);
+      const addBtn = document.querySelector("#addBtn");
+      // 추가 버튼
+      addBtn.addEventListener("click", () => {
+        box.classList.add("red");
+      });
+      const removeBtn = document.querySelector("#removeBtn");
+      //삭제버튼
+      removeBtn.addEventListener("click", () => {
+        box.classList.remove("red");
+      });
+      const toggleBtn = document.querySelector("#toggleBtn");
+      //추가/삭제 버튼
+      toggleBtn.addEventListener("click", () => {
+        box.classList.toggle("blue");
+      });
+      const checkBtn = document.querySelector("#checkBtn");
+      //확인 버튼
+      checkBtn.addEventListener("click", () => {
+        if (box.classList.contains("red")) {
+          console.log("red클래스가 있습니다.");
+          box.classList.remove("red");
+        } else {
+          console.log("red클래스가 없습니다.");
+          box.classList.add("red");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -23,7 +23,13 @@
       const menu = document.querySelector(".menu");
       const submenu = document.querySelector(".submenu");
       menu.addEventListener("click", () => {
-        submenu.classList.toggle("active");
+        // submenu.classList.toggle("active");
+        //toggle 안 쓸 경우
+        if(submenu.classList.contains("active")){
+          submenu.classList.remove("active");
+        }else{
+          submenu.classList.add("active");
+        }
       });
     </script>
   </body>
