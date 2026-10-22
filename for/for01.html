@@ -8,16 +8,43 @@
   <body>
     <!-- for 반복문: 같은 코드를 여러번 실행할 때 사용하는 반복문-->
     <script>
-      // for 기본형
-      // for(시작;조건;증가){
-      //     //실행코드
-      // }
-      for (let i = 0; i < 5; i++) {
-        console.log(i);
+          // for 기본형
+          // for(시작;조건;증가){
+          //     //실행코드
+          // }
+          for (let i = 0; i < 5; i++) {
+            console.log(i);
+          }
+          for (let i = 1; i <= 10; i++) {
+            console.log(i);
+          }
+        //   1부터 10까지 더한값
+        let sum = 0;
+        for(let i=1; i<=100; i++){
+            sum +=i;
+        }
+        document.write(`${sum} <br>`);
+      //   안녕하세요 5번 출력
+      for(let i =1; i<=5; i++){
+          document.write(`안녕하세요 ${i} 반가워요<br/>`)
       }
-      for (let i = 1; i <= 10; i++) {
-        console.log(i);
+      // 짝수 출력
+      for(let i =1; i<=10;i++){
+          if(i % 2 ===0){
+            document.write(`${i}(짝수)<br>`);
+          }
       }
+    //   홀수 출력
+    for(let i = 1; i<=10; i++){
+        if(i % 2 ===1){
+        document.write(`${i}(홀수)<br>`);
+        }
+    }
+    //별 찍기
+    for(let i =1 ; i <= 5; i++){
+        document.write(`${"🌟".repeat(i)}<br>`)
+    }
+    document.write("🌟".repeat(5));
     </script>
   </body>
 </html>
